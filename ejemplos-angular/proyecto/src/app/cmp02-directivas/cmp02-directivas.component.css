@@ -1,0 +1,4 @@
+div.tareaCompletada {
+  background-color: gray;
+  text-decoration: line-through;
+}

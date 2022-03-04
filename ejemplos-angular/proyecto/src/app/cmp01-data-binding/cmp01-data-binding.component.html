@@ -1,0 +1,23 @@
+<h2>Data Binding</h2>
+
+<h3>String Interpolation</h3>
+<p>Hola nombre</p>
+<p>Hola {{nombre}}</p>
+<p>Hola {{getNombre()}}</p>
+<p>Hola {{nombre ? nombre : 'Mundo'}}</p>
+
+<h3>Property Binding</h3>
+<img [src]="logoAngular" width="150" alt="Logo de Angular">
+
+<!-- Usar los [] antes que las {{}} -->
+<!-- <img src="{{logoAngular}}" width="150" alt="Logo de Angular"> -->
+
+<h3>Event Binding</h3>
+<input type="text" (change)="cambiarNombre($event)">
+
+<button type="button" (click)="resetNombre()">Resetear nombre</button>
+
+
+<h3>Two-Way Data Binding</h3>
+<input type="text" [(ngModel)]="nombre">
+<input type="text" (input)="cambiarNombre($event)" [value]="nombre">

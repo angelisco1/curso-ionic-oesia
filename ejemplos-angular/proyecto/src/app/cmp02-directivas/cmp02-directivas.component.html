@@ -1,0 +1,44 @@
+<h2>Directivas</h2>
+
+<h3>De atributo</h3>
+<!-- <app-sugus></app-sugus>
+<app-sugus [color]="sugus.color" [sabor]="sugus.sabor"></app-sugus>
+<app-sugus color="orange" sabor="naranja"></app-sugus>
+<app-sugus color="blue" sabor="piña"></app-sugus> -->
+
+<div [ngClass]="{tareaCompletada: tarea.completada}">
+  <p (click)="completarTarea()">{{tarea.titulo}}</p>
+</div>
+
+<h3>Estructurales</h3>
+<!--
+*ngIf
+*ngFor
+ngSwitch
+-->
+
+<button type="button" (click)="toggleDarkMode(false)" *ngIf="darkMode; else btnLightMode">Dark Mode 🌜 activado</button>
+<!-- <hr>
+<button type="button" (click)="toggleDarkMode(true)" *ngIf="!darkMode">Ligth Mode 🌞 activado</button> -->
+
+<ng-template #btnLightMode>
+  <button type="button" (click)="toggleDarkMode(true)">Ligth Mode 🌞 activado</button>
+</ng-template>
+
+<app-sugus
+  *ngFor="let s of listaSugus"
+  [color]="s.color"
+  [sabor]="s.sabor"></app-sugus>
+
+
+<select [(ngModel)]="langSeleccionado">
+  <option *ngFor="let lang of listaLang" [value]="lang">{{lang}}</option>
+</select>
+
+
+<div [ngSwitch]="langSeleccionado">
+  <p *ngSwitchCase="'spanish'">Hola mundo</p>
+  <p *ngSwitchCase="'english'">Hello world</p>
+  <p *ngSwitchCase="'french'">Salut monde</p>
+  <p *ngSwitchDefault>Ciao mondo</p>
+</div>
