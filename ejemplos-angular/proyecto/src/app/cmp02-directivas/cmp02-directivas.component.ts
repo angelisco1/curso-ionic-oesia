@@ -1,8 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggerService } from '../cmp03-servicios/logger.service'
 
 interface ISugus {
   color: string,
   sabor: string
+}
+
+// [key: string] -> indicamos que las claves son strings pero el nombre que se les da no importa, puede ser cualquier palabra
+interface ITranslations {
+  [key: string]: string
 }
 
 @Component({
@@ -16,6 +22,13 @@ export class Cmp02DirectivasComponent implements OnInit {
     sabor: 'fresa'
   }
 
+  translations: ITranslations = {
+    spanish: 'Hola mundo',
+    english: 'Hello world',
+    french: 'Salut monde',
+    italian: 'Ciao mondo',
+  }
+
   listaSugus: Array<ISugus> = [
     this.sugus,
     { color: 'blue', sabor: 'piña' },
@@ -27,7 +40,7 @@ export class Cmp02DirectivasComponent implements OnInit {
     'spanish',
     'french',
     'english',
-    'italian',
+    // 'italian',
   ]
 
   langSeleccionado: string = 'italian'
@@ -40,7 +53,7 @@ export class Cmp02DirectivasComponent implements OnInit {
 
   darkMode: boolean = true
 
-  constructor() { }
+  constructor(private logger: LoggerService) { }
 
   ngOnInit(): void {
   }
@@ -51,6 +64,7 @@ export class Cmp02DirectivasComponent implements OnInit {
 
   toggleDarkMode(activado: boolean): void {
     this.darkMode = activado
+    this.logger.cambiarModoOscuro(activado)
   }
 
 }

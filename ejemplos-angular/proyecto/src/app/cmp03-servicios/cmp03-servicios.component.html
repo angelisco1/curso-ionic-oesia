@@ -1,0 +1,10 @@
+<!-- Generar el componente:
+ng g c cmp03-servicios -->
+
+<!-- claseModoOscuro es la clase -> está en el CSS -->
+<div [ngClass]="{claseModoOscuro: modoOscuroActivado}">
+  <h2>Servicios</h2>
+
+  <button type="button" (click)="mostrarError()">Mostrar error</button>
+  <button type="button" (click)="mostrarWarning()">Mostrar warning</button>
+</div>

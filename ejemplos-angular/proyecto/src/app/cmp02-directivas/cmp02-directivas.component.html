@@ -25,6 +25,7 @@ ngSwitch
   <button type="button" (click)="toggleDarkMode(true)">Ligth Mode 🌞 activado</button>
 </ng-template>
 
+
 <app-sugus
   *ngFor="let s of listaSugus"
   [color]="s.color"
@@ -33,12 +34,16 @@ ngSwitch
 
 <select [(ngModel)]="langSeleccionado">
   <option *ngFor="let lang of listaLang" [value]="lang">{{lang}}</option>
+  <option value="italian">italian</option>
 </select>
 
 
 <div [ngSwitch]="langSeleccionado">
-  <p *ngSwitchCase="'spanish'">Hola mundo</p>
+  <ng-container *ngFor="let lang of listaLang">
+    <p *ngSwitchCase="lang">{{translations[lang]}}</p>
+  </ng-container>
+  <!-- <p *ngSwitchCase="'spanish'">Hola mundo</p>
   <p *ngSwitchCase="'english'">Hello world</p>
-  <p *ngSwitchCase="'french'">Salut monde</p>
-  <p *ngSwitchDefault>Ciao mondo</p>
+  <p *ngSwitchCase="'french'">Salut monde</p> -->
+  <p *ngSwitchDefault>{{translations['italian']}}</p>
 </div>
