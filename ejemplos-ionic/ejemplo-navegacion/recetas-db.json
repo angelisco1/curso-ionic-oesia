@@ -1,0 +1,26 @@
+{
+  "recetas": [
+    {
+      "id": 0,
+      "nombre": "Tortilla de patatas",
+      "ingredientes": [
+        "patata",
+        "aceite",
+        "huevo",
+        "cebolla",
+        "sal"
+      ]
+    },
+    {
+      "id": 1,
+      "nombre": "Gachas manchegas",
+      "ingredientes": [
+        "harina de almortas",
+        "aceite",
+        "sal",
+        "pimentón",
+        "panceta"
+      ]
+    }
+  ]
+}
