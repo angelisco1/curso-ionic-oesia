@@ -13,22 +13,36 @@ export class NuevoUsuarioPage implements OnInit {
   ngOnInit() {
   }
 
-  guardar() {
+  async guardar() {
     // Aquí deberíamos de recoger los datos del formulario y hacer una petición POST
-    this.mostrarLoading()
-      .then((loader: HTMLIonLoadingElement) => {
-        loader.present()
+    const loader: HTMLIonLoadingElement = await this.mostrarLoading()
+    await loader.present()
 
-        setTimeout(() => {
-          loader.dismiss()
+    setTimeout(async () => {
+      await loader.dismiss()
 
-          // Navegar a la página con la info del usuario
-          this.router.navigate(['/usuario', 'ángel'], { replaceUrl: true })
-          // this.router.navigateByUrl('/usuario/ángel', { replaceUrl: true })
-        }, 2000)
-
-      })
+      // Navegar a la página con la info del usuario
+      this.router.navigate(['/usuario', 'ángel'], { replaceUrl: true })
+      // this.router.navigateByUrl('/usuario/ángel', { replaceUrl: true })
+    }, 2000)
   }
+
+  // guardar() {
+  //   // Aquí deberíamos de recoger los datos del formulario y hacer una petición POST
+  //   this.mostrarLoading()
+  //     .then((loader: HTMLIonLoadingElement) => {
+  //       loader.present()
+
+  //       setTimeout(() => {
+  //         loader.dismiss()
+
+  //         // Navegar a la página con la info del usuario
+  //         this.router.navigate(['/usuario', 'ángel'], { replaceUrl: true })
+  //         // this.router.navigateByUrl('/usuario/ángel', { replaceUrl: true })
+  //       }, 2000)
+
+  //     })
+  // }
 
   mostrarLoading() {
     return this.loadingCtrl.create({
