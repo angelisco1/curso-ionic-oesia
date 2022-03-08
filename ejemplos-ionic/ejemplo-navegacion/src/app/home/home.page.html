@@ -13,8 +13,8 @@
     <!-- <ion-item *ngFor="let usuario of listaUsuarios" routerLink="/usuario"> -->
     <ion-item *ngFor="let usuario of listaUsuarios" [routerLink]="['/usuario', usuario.nombre]">
       <ion-label>
-        <p>{{usuario.nombre}}</p>
-        <p>{{usuario.apellido}}</p>
+        <p>{{usuario.nombre | titlecase}} {{usuario.apellido | titlecase}}</p>
+        <p>{{usuario.precio | currency:simbolo | unidadPago:usuario.unidad}}</p>
       </ion-label>
       <ion-avatar slot="start">
         <img [src]="usuario.imagen" alt="Imagen de {{usuario.nombre}}">
