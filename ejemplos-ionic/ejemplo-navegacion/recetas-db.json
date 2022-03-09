@@ -3,7 +3,13 @@
     {
       "id": 0,
       "nombre": "Tortilla de patatas",
-      "ingredientes": ["patata", "huevo", "sal", "cebolla", "aceite"],
+      "ingredientes": [
+        "patata",
+        "huevo",
+        "sal",
+        "cebolla",
+        "aceite"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -16,7 +22,17 @@
     {
       "id": 1,
       "nombre": "Magro con tomate",
-      "ingredientes": ["cerdo", "cebolleta", "ajo", "laurel", "pimiento", "tomate", "aceite", "sal", "vino"],
+      "ingredientes": [
+        "cerdo",
+        "cebolleta",
+        "ajo",
+        "laurel",
+        "pimiento",
+        "tomate",
+        "aceite",
+        "sal",
+        "vino"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -29,7 +45,14 @@
     {
       "id": 2,
       "nombre": "Gachas manchegas",
-      "ingredientes": ["harina de almortas", "pimentón", "agua", "ajo", "aceite", "panceta"],
+      "ingredientes": [
+        "harina de almortas",
+        "pimentón",
+        "agua",
+        "ajo",
+        "aceite",
+        "panceta"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -42,7 +65,15 @@
     {
       "id": 3,
       "nombre": "Salmorejo cordovés",
-      "ingredientes": ["tomate", "aceite", "pan", "sal", "ajo", "huevo", "jamón serrano"],
+      "ingredientes": [
+        "tomate",
+        "aceite",
+        "pan",
+        "sal",
+        "ajo",
+        "huevo",
+        "jamón serrano"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -55,7 +86,20 @@
     {
       "id": 4,
       "nombre": "Paella valenciana",
-      "ingredientes": ["arroz", "pollo", "conejo", "garrafó", "judias verdes", "aceite", "tomate", "agua", "azafrán", "romero", "sal", "pimentón"],
+      "ingredientes": [
+        "arroz",
+        "pollo",
+        "conejo",
+        "garrafó",
+        "judias verdes",
+        "aceite",
+        "tomate",
+        "agua",
+        "azafrán",
+        "romero",
+        "sal",
+        "pimentón"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -68,7 +112,17 @@
     {
       "id": 5,
       "nombre": "Cachopo",
-      "ingredientes": ["ternera", "jamón serrano", "queso", "sal", "huevo", "patata", "harina", "pan rallado", "aceite"],
+      "ingredientes": [
+        "ternera",
+        "jamón serrano",
+        "queso",
+        "sal",
+        "huevo",
+        "patata",
+        "harina",
+        "pan rallado",
+        "aceite"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -81,7 +135,15 @@
     {
       "id": 6,
       "nombre": "Fabada asturiana",
-      "ingredientes": ["fabes", "panceta", "chorizo", "morcilla", "agua", "sal", "azafrán"],
+      "ingredientes": [
+        "fabes",
+        "panceta",
+        "chorizo",
+        "morcilla",
+        "agua",
+        "sal",
+        "azafrán"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -94,7 +156,13 @@
     {
       "id": 7,
       "nombre": "Pulpo a feira",
-      "ingredientes": ["pulpo", "patata", "pimentón", "aceite", "sal"],
+      "ingredientes": [
+        "pulpo",
+        "patata",
+        "pimentón",
+        "aceite",
+        "sal"
+      ],
       "pasos": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
@@ -103,6 +171,22 @@
       ],
       "imagen": "http://blog.welcomebeds.com/wp-content/uploads/2018/08/0d2239dd9ef5d2684a574183970f0518.jpg",
       "tiempoPreparacion": "45 min"
+    },
+    {
+      "nombre": "Pollo con patatas",
+      "tiempoPreparacion": "20 min",
+      "imagen": "https://estoyhechouncocinillas.com/wp-content/uploads/2017/08/pollo-en-salsa.jpg",
+      "ingredientes": [
+        "patata",
+        "aceite",
+        "sal",
+        "pollo"
+      ],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque."
+      ],
+      "id": 8
     }
   ]
 }

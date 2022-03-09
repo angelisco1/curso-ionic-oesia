@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { RecetasService } from '../servicios/recetas.service';
 
 @Component({
   selector: 'app-nueva-receta',
@@ -23,7 +25,7 @@ export class NuevaRecetaPage implements OnInit {
   ]
 
 
-  constructor() {
+  constructor(private recetasService: RecetasService, private router: Router) {
     this.recetaForm = new FormGroup({
       nombre: new FormControl('Pollo con patatas', Validators.required),
       tiempoPreparacion: new FormControl(''),
@@ -56,6 +58,11 @@ export class NuevaRecetaPage implements OnInit {
 
   guardar() {
     console.log(this.recetaForm)
+    this.recetasService.crearReceta(this.recetaForm.value)
+      .subscribe((resp) => {
+        console.log(resp)
+        this.router.navigateByUrl('/recetas', { replaceUrl: true })
+      })
   }
 
 }

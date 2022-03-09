@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IReceta } from '../../servicios/recetas.service';
+import { IReceta, RecetasService } from '../../servicios/recetas.service';
 
 @Component({
   selector: 'app-receta',
@@ -10,8 +10,14 @@ export class RecetaComponent implements OnInit {
 
   @Input() receta: IReceta;
 
-  constructor() { }
+  constructor(private recetasService: RecetasService) { }
 
   ngOnInit() {}
 
+  eliminar() {
+    this.recetasService.eliminarReceta(this.receta.id)
+      .subscribe(() => {
+        console.log('Eliminada...')
+      })
+  }
 }
