@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-nueva-receta',
@@ -8,7 +8,7 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 })
 export class NuevaRecetaPage implements OnInit {
   recetaForm: FormGroup
-  listaIngredientes: Array<string> = [
+  listaIngredientes: Array<any> = [
     'huevo',
     'patata',
     'aceite',
@@ -25,15 +25,33 @@ export class NuevaRecetaPage implements OnInit {
 
   constructor() {
     this.recetaForm = new FormGroup({
-      nombre: new FormControl('Pollo con patatas'),
+      nombre: new FormControl('Pollo con patatas', Validators.required),
       tiempoPreparacion: new FormControl(''),
       imagen: new FormControl('https://estoyhechouncocinillas.com/wp-content/uploads/2017/08/pollo-en-salsa.jpg'),
       ingredientes: new FormArray([]),
-      pasos: new FormArray([]),
+      pasos: new FormArray([
+        new FormControl('Lorem ipsum dolor sit amet consectetur adipisicing elit.'),
+        new FormControl('Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.')
+      ]),
     })
   }
 
   ngOnInit() {
+  }
+
+  addIngrediente(ingrediente: string): void {
+    // const ingredienteBuscado = this.listaIngredientes.find(i => i.nombre === ingrediente)
+    // if (ingredienteBuscado) {
+    //   ingredienteBuscado.checked = !ingredienteBuscado.checked
+    // }
+    const ingredientesFormArray = this.recetaForm.get('ingredientes') as FormArray
+
+    if (ingredientesFormArray.value.includes(ingrediente)) {
+      const pos = ingredientesFormArray.value.findIndex(i => i === ingrediente)
+      ingredientesFormArray.removeAt(pos)
+    } else {
+      ingredientesFormArray.push(new FormControl(ingrediente))
+    }
   }
 
   guardar() {

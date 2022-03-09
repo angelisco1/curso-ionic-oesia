@@ -30,7 +30,7 @@
         </ion-list-header>
         <ion-item *ngFor="let ingrediente of listaIngredientes">
           <ion-label>{{ingrediente}}</ion-label>
-          <ion-checkbox [value]="ingrediente"></ion-checkbox>
+          <ion-checkbox [value]="ingrediente" (click)="addIngrediente(ingrediente)"></ion-checkbox>
         </ion-item>
       </ion-list>
     </ion-item>
