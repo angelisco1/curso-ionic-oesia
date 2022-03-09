@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva receta</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="guardar()" [formGroup]="recetaForm">
+    <ion-item>
+      <ion-label position="floating">Nombre:</ion-label>
+      <ion-input type="text" formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Imagen:</ion-label>
+      <ion-input type="text" formControlName="imagen"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tiempo preparación:</ion-label>
+      <ion-input type="text" formControlName="tiempoPreparacion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>Ingredientes:</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let ingrediente of listaIngredientes">
+          <ion-label>{{ingrediente}}</ion-label>
+          <ion-checkbox [value]="ingrediente"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label position="floating">Tiempo preparación:</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item> -->
+    <ion-button type="submit" expand="block">Guardar receta</ion-button>
+  </form>
+
+</ion-content>
