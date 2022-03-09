@@ -3,24 +3,106 @@
     {
       "id": 0,
       "nombre": "Tortilla de patatas",
-      "ingredientes": [
-        "patata",
-        "aceite",
-        "huevo",
-        "cebolla",
-        "sal"
-      ]
+      "ingredientes": ["patata", "huevo", "sal", "cebolla", "aceite"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://s1.eestatic.com/2020/04/10/ciencia/nutricion/nutricion_481463388_150096481_1706x960.jpg",
+      "tiempoPreparacion": "45 min"
     },
     {
       "id": 1,
+      "nombre": "Magro con tomate",
+      "ingredientes": ["cerdo", "cebolleta", "ajo", "laurel", "pimiento", "tomate", "aceite", "sal", "vino"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://thermomix-malaga.es/media/Posts/attachments/8752df3a264e58fc3bf983adfd7876fb.jpg",
+      "tiempoPreparacion": "1 h"
+    },
+    {
+      "id": 2,
       "nombre": "Gachas manchegas",
-      "ingredientes": [
-        "harina de almortas",
-        "aceite",
-        "sal",
-        "pimentón",
-        "panceta"
-      ]
+      "ingredientes": ["harina de almortas", "pimentón", "agua", "ajo", "aceite", "panceta"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://www.anchacastilla.com/wp-content/uploads/2017/07/gachas_manchegas.jpg",
+      "tiempoPreparacion": "15 min"
+    },
+    {
+      "id": 3,
+      "nombre": "Salmorejo cordovés",
+      "ingredientes": ["tomate", "aceite", "pan", "sal", "ajo", "huevo", "jamón serrano"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://img.saboresdehoy.com/receta/605/salmorejo-cordobes.jpg",
+      "tiempoPreparacion": "1 h 05 min"
+    },
+    {
+      "id": 4,
+      "nombre": "Paella valenciana",
+      "ingredientes": ["arroz", "pollo", "conejo", "garrafó", "judias verdes", "aceite", "tomate", "agua", "azafrán", "romero", "sal", "pimentón"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://imag.bonviveur.com/paella-valenciana-tradicional.jpg",
+      "tiempoPreparacion": "1 h 30 min"
+    },
+    {
+      "id": 5,
+      "nombre": "Cachopo",
+      "ingredientes": ["ternera", "jamón serrano", "queso", "sal", "huevo", "patata", "harina", "pan rallado", "aceite"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "https://www.barcelo.com/pinandtravel/wp-content/uploads/2017/07/pin-and-travel-cachopo@2x.jpg",
+      "tiempoPreparacion": "25 min"
+    },
+    {
+      "id": 6,
+      "nombre": "Fabada asturiana",
+      "ingredientes": ["fabes", "panceta", "chorizo", "morcilla", "agua", "sal", "azafrán"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "http://blog.welcomebeds.com/wp-content/uploads/2018/08/81bc9f1c4cb43b2e2d32b96187b86b60.jpg",
+      "tiempoPreparacion": "3 h"
+    },
+    {
+      "id": 7,
+      "nombre": "Pulpo a feira",
+      "ingredientes": ["pulpo", "patata", "pimentón", "aceite", "sal"],
+      "pasos": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Molestiae ab itaque inventore quod repudiandae porro iure culpa harum aut? Aliquam magni maxime pariatur minima, minus cumque.",
+        "Nam aut magnam id! Ad quaerat dolor eius nesciunt ea? Soluta, ducimus reiciendis.",
+        "Perferendis quibusdam asperiores assumenda corrupti corporis minus possimus adipisci soluta, accusantium dolore tempore?"
+      ],
+      "imagen": "http://blog.welcomebeds.com/wp-content/uploads/2018/08/0d2239dd9ef5d2684a574183970f0518.jpg",
+      "tiempoPreparacion": "45 min"
     }
   ]
 }
