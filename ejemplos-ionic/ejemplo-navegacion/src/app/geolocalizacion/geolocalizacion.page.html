@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>geolocalizacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button type="button" (click)="mostrarUbicacion()">Dime donde estoy</ion-button>
+
+  <p>Latitud: {{ubicacion.latitud}}</p>
+  <p>Longitud: {{ubicacion.longitud}}</p>
+</ion-content>

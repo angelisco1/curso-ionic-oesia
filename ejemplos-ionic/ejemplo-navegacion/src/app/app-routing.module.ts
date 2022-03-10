@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'temas',
     loadChildren: () => import('./temas/temas.module').then( m => m.TemasPageModule)
   },
+  {
+    path: 'geolocalizacion',
+    loadChildren: () => import('./geolocalizacion/geolocalizacion.module').then( m => m.GeolocalizacionPageModule)
+  },
 ];
 
 @NgModule({
