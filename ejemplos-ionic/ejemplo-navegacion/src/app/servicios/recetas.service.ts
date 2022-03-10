@@ -34,7 +34,7 @@ export class RecetasService {
   eliminarReceta(id: number): Observable<any> {
     return this.http.delete(`${environment.urlBase}/recetas/${id}`)
       .pipe(
-        tap(() => this.recetaEliminada$.emit(id))
+        tap((datos) => this.recetaEliminada$.emit(id)),
       )
   }
 
